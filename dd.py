@@ -18,6 +18,7 @@ reye = cv2.CascadeClassifier(r"C:\Users\adi22\Desktop\dd\haar cascade files\haar
 lbl=['Close','Open']
 
 model = load_model(r"C:\Users\adi22\Desktop\dd\models\cnnCat2.h5")
+print(model.summary())
 path = os.getcwd()
 cap = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_COMPLEX_SMALL
